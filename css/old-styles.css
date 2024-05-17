@@ -360,7 +360,7 @@ padding: 120px 0;
 
 /*-----------CASTOMERS-----------*/
 
-.customers {
+.portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -409,6 +409,14 @@ padding: 120px 0;
     border-color: #404BBF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
+
+/*------------Our Portfolio-----------*/
+
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+
 
 /*------------FOOTER-----------*/
 
