@@ -494,15 +494,7 @@ padding: 120px 0;
     background-color: #31d0aa;
     }
 
-.footer-next {
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-        }
-.footer-form {
-    display: flex;
-    gap: 24px;
-   }
+
 .footer-input {
 border-radius: 4px;
 border: 1px solid  #FFF;
