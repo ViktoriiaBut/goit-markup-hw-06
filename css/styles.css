@@ -517,7 +517,7 @@ color: #8e8f99;
     justify-content: center;*/
 }
 .chek-text-span {
-    /display: inline-flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
   width: 16px;
