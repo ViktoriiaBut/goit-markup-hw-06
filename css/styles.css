@@ -512,13 +512,13 @@ color: #8e8f99;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    /*display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center;*/
+    
 }
 .chek-text-span {
     display: inline-flex;
-    justify-content: center;
+    
     align-items: center;
   width: 16px;
   height: 16px;
@@ -629,7 +629,7 @@ border: none;
 @media screen and (min-width: 768px) {
     .hero {
         padding-top: 112px;
-        max-width: 768px;
+        width: 768px;
         height: 432px;
     }
     .hero-title {
@@ -642,13 +642,19 @@ align-items: center;
     margin-bottom: 112px;
    }
    .modal {
-    width: 408px;
+    min-width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
   }
   .modal-title {
     max-width: 360px;
         }
+   .chek-text-span {
+    margin-right: 8px;
+   } 
+   .privace-link {
+    margin-left: 4px;
+   }     
 }
 
 @media screen and (min-width: 1158px) {
