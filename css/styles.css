@@ -210,7 +210,6 @@ header {
 
 
     .mobile-menu {
-        
         position: fixed;
         left: 0;
         top: 0;
@@ -222,7 +221,8 @@ header {
     .mobile-menu-wrap {
         display: flex;
         flex-direction: column;
-        padding: 72px 16px 40px 16px;
+        padding-top: 72px;
+        padding-left: 16px;
         min-width: 320px;
         min-height: 640px;
         position: relative;
@@ -292,7 +292,9 @@ header {
         padding-bottom: 40px;
         align-items: center;
         padding-left: 16px;
-            }
+        
+        
+                    }
                         
         .mobile-adress-link:hover,
         .mobile-adress-link:focus {
