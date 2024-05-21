@@ -208,15 +208,113 @@ header {
     
          /*------------MOBILE MENU-----------*/ 
 
+        .mobile-menu {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            background-color: #ffffff;
+            padding: 24px 24px 40px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            } 
+            .mobile-menu.is-open {
+                transform: translateX(0%);
+            }
+        .mobile-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-bottom: 24px;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+             background-color: #ffffff;
+             border: 1px solid rgba(0, 0, 0, 0.1);
+             padding: 0;
+             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
 
-    .mobile-menu {
+        .mobile-menu-list-item:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        .mobile-menu-link {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            display: block;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .mobile-address-list {
+            margin-top: 168px;
+            margin-bottom: 48px;
+        }
+        .mobile-address-item:not(:last-child) {
+            margin-bottom: 24px;
+            }
+            .mobile-adress-link {
+                font-weight: 500;
+                font-style: 20px;
+                line-height: 1.2;
+                letter-spacing: 0.02em;
+                color: #434455;
+                display: block;
+                transition-property: color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .mobile-list {
+                display: flex;
+                gap: 40px;
+                justify-content: center;
+
+            }   
+            .mobile-item {
+                width: 40px;
+                height: 40px;
+            }  
+            .mobile-social {
+                width: 100%;
+                height: 100%;
+                background-color: #4d5ae5;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .mobile-icon {
+                fill: #F4F4FD;
+            }  
+            .mobile-menu-link:focus {
+                color: #404bbf;
+            }
+            .mobile-adress-link:focus {
+                color: #4d5ae5;
+            }
+
+    /*.mobile-menu {
         position: fixed;
-        left: 0;
         top: 0;
         background-color: #fff;
         width: 100%;
         height: 100%;
-        owerflow: auto;
+        owerflow: auto; 
+        padding: 24px 24px 40px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     .mobile-menu-wrap {
         display: flex;
@@ -243,6 +341,9 @@ header {
         background-color: transparent;
       border-radius: 100%;
       cursor: pointer;
+      fill: #e7e9fc;
+    stroke-width: 1px;
+    stroke: #2e2f42;
     }
       .mobile-menu.is-open {
         transform: translateX(0%);
@@ -259,7 +360,7 @@ header {
        letter-spacing: 0.02em;
        margin-bottom: 168px;
        padding-top: 72px;
-       margin-left: 0;
+      
     }
     .mobile-menu-link:hover,
     .mobile-menu-link:focus {
@@ -326,7 +427,7 @@ header {
                     display: none;
             }
         }
-            
+          */ 
             
             /*------------MODAL-----------*/
 .backdrop {
