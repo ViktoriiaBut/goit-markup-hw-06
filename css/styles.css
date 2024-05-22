@@ -204,7 +204,6 @@ header {
             color: #434455;
         }
     }
-
     
          /*------------MOBILE MENU-----------*/ 
 
@@ -779,7 +778,6 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 padding-bottom: 8px;
-
 }
 
 .featurs-item-text {
@@ -811,12 +809,25 @@ color: #434455;
         width: calc((100% - 24px) / 2);
         
     }
+    .featurs-item-text {
+        margin-bottom: 64px;
+    }
+    
 }       
 
 @media screen and (min-width: 1158px) {
     .featurs {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+    .featurs-item {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+text-align: left;
+}
+    .featurs-item-text{
+        font-weight: 400;
     }
     .featurs-icons {
         height: 112px;
@@ -832,14 +843,18 @@ color: #434455;
         }
          .featurs-item {
             margin-bottom: 8px; 
-          }      
+          }   
+          .featurs-item-text {
+            margin-bottom: 0;
+        }
+           
 }
 
 /*------------TEAM-----------*/
 .team {
     margin: 0 auto;
     min-width: 320px;
-    height: 2232px;
+    
     padding-bottom: 96px;
     background: #f4f4fd;
 }
@@ -909,8 +924,7 @@ color: #434455;
             
      @media screen and (min-width: 768px) {
      .team {
-        width: 768px;
-        height: 1224px;
+        padding: auto;
      }   
      .team-list-m {
         display: flex;
@@ -928,8 +942,6 @@ color: #434455;
   
 @media screen and (min-width: 1158px) {
    .team {
-        width: 1440px;
-        height: 780px;
         padding: 120px 0;
     }
     .team-list-m {
@@ -1055,14 +1067,14 @@ margin-bottom: 8px;
     /*------------FOOTER-----------*/
     .footer {
         background-color: #2E2F42;
-        padding-top: 96px;
-        position: relative;
         min-width: 320px;
-        height: 664px;
-                }
+        margin-top: 96px;
+    }
+    
     .footer-container {
-               width: 288px;
-              }  
+        padding-top: 96px;
+    }
+              
     .footer-logo-link {
         color: var(--accent-color);
         font-size: 18px;
@@ -1082,7 +1094,8 @@ margin-bottom: 8px;
             color: #f4f4fd;
             font-size: 16px;
             line-height: 1.5;
-            letter-spacing: 0.02em;                           
+            letter-spacing: 0.02em;  
+            padding-bottom: 72px;             
                  }
         .footer-list {
             display: flex;
@@ -1106,7 +1119,6 @@ margin-bottom: 8px;
             letter-spacing: 0.02em;
             display: flex;
             justify-content: center;
-            margin-top: 72px;
             margin-bottom: 16px;
             color: #FFFFFF;                   
                 }     
@@ -1119,11 +1131,12 @@ margin-bottom: 8px;
                                             align-items: center;
                                             justify-content: center;
                                             transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                            margin-bottom: 72px;
+                                            
                                         }                                               
                                         .footer-next {
                                             display: flex;
                                             flex-direction: column;
+                                            padding-top: 72px;
                                                     }
                                     
                                                .footer-input {
@@ -1164,6 +1177,7 @@ justify-content: center;
 align-items: center;
 text-align: center;
                                                 cursor: pointer;
+                                                margin-bottom: 96px;
                                                     }
                                                 .footer-form-btn:hover,
                                                 .footer-form-btn:focus {
@@ -1179,23 +1193,29 @@ text-align: center;
                                                 
     @media screen and (min-width: 768px) {
     .footer-div {
-        width: 768px;
-height: 456px;
-    }
-    .footer-container {
-        width: 264px;
-        height: 112px;
-        padding-right: 24px;
-       } 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        padding-left: 108px;
+            }
+
             .footer-container-media {
     display: flex;
     align-items: baseline;
-    margin-left: 108px;
-    margin-top: 96px;
-}     
-    .footer-logo-link, .footer-text-two {
+    gap: 24px;
+       }    
+   .footer-text-one {
+    width: 264px;
+    padding-bottom: 0;
+   } 
+    .footer-text-two {
         display: flex;
         justify-content: flex-start;
+        
+    }
+    .footer-next {
+      padding: 0;
     }
            .footer-input {
             width: 264px;
@@ -1204,43 +1224,49 @@ height: 456px;
             align-items: baseline;
            }  
            .footer-form {
-            margin-left: 108px;
+            flex-direction: row;
+            gap:24px;
            }  
         }                     
 
         @media screen and (min-width: 1158px) {  
             .footer {
-                padding: 100px 0;
-                position: relative;
-                height: 312px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 100px 0 0 0;
                         }
                         .footer-div {
                             display: flex;
                             align-items: baseline;
-                            position: absolute;
                             top: 50%;
                             transform: translateY(-50%);
-                            margin-left: 120px;
+                            padding: 0;
+                            margin: 0;
                                             } 
-                                        
-            
+ .footer-input, .footer-form-btn { 
+    margin: 0; 
+ }        
 .footer-text-one {
-    margin-right: 120px;
-                width: 264px;
+        width: 264px;            
                 }
+.footer-container-media {
+    gap: 120px;
+    
+}
+.footer-media {
+    padding-right: 80px;
+}
              .footer-form {
                 display: flex;
                 gap: 24px;
              }
-             .footer-container {
-                margin-right: 120px;
-                      }  
+ 
             }  
 
 
-                            .
-
+                            
                       
            
                
-              
+    
