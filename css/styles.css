@@ -624,7 +624,7 @@ background-color:#404bbf;
     margin: 0 auto;
     max-width: 320px;
     height: 432px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero\ image-mob.jpg");
+    background-image: url("../images/hero\ image-mob.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -685,9 +685,9 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 768px) {
     .hero {
-        padding-top: 112px;
+        padding-top: 0;
         min-width: 768px;
-        height: 432px;
+        
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -705,14 +705,15 @@ screen and (min-resolution: 2dppx) {
       url("../images/hero\ image-tab@2x.jpg");
   }
 }
+
     .hero-title {
 font-size: 56px;
 line-height: 1.07143;
 max-width: 496px;
-align-items: center;
+padding-top: 112px;
 }
    .hero-btn {
-    margin-bottom: 112px;
+    
    }
    .modal {
     width: 408px;
@@ -735,18 +736,20 @@ align-items: center;
 
 @media screen and (min-width: 1158px) {
     .hero {
+        padding-top: 0;
         max-width: 1440px;
         height: 600px;
-        padding-top: 188px;
+        margin-top: 102px;
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
           ),
           url("../images/hero\ image-desk.jpg");
     }
-     .hero-btn {
-            margin-bottom: 188px;
-           } 
+    .hero-title {
+        padding-top: 188px;
+        }
+
            @media screen and (min-device-pixel-ratio: 2),
            screen and (min-resolution: 192dpi),
            screen and (min-resolution: 2dppx) {
@@ -798,6 +801,9 @@ color: #434455;
         padding-top: 96px;
         padding-bottom: 96px;
     }
+    .featurs-item {
+        text-align: left;
+    }
     .featurs-list {
         display: flex;
         flex-wrap: wrap;
@@ -824,7 +830,7 @@ color: #434455;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
-text-align: left;
+
 }
     .featurs-item-text{
         font-weight: 400;
@@ -854,7 +860,6 @@ text-align: left;
 .team {
     margin: 0 auto;
     min-width: 320px;
-    
     padding-bottom: 96px;
     background: #f4f4fd;
 }
@@ -954,13 +959,13 @@ text-align: left;
    }
 
    /*------------PORTFOLIO-----------*/
-   .customers {
+   .portfolio {
     padding-top: 96px;
     padding-bottom: 96px;
+    
     }
-
+ 
 .portfolio-title {
-    padding-top: 96px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111;
@@ -1035,7 +1040,10 @@ margin-bottom: 8px;
      }
 
      @media screen and (min-width: 768px) {
-
+        .container-portfolio {
+            display: flex;
+            margin: auto;
+        }
         .service-item {
             width: calc((100% - 24px) / 2);
             
@@ -1068,7 +1076,7 @@ margin-bottom: 8px;
     .footer {
         background-color: #2E2F42;
         min-width: 320px;
-        margin-top: 96px;
+       
     }
     
     .footer-container {
@@ -1136,8 +1144,7 @@ margin-bottom: 8px;
                                         .footer-next {
                                             display: flex;
                                             flex-direction: column;
-                                            padding-top: 72px;
-                                                    }
+                                                     }
                                     
                                                .footer-input {
                                                 border-radius: 4px;
@@ -1193,17 +1200,16 @@ text-align: center;
                                                 
     @media screen and (min-width: 768px) {
     .footer-div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 72px 24px;
+        
+
         padding-left: 108px;
             }
 
-            .footer-container-media {
+    .footer-container-media  {
     display: flex;
     align-items: baseline;
     gap: 24px;
+
        }    
    .footer-text-one {
     width: 264px;
@@ -1215,7 +1221,10 @@ text-align: center;
         
     }
     .footer-next {
+        display: flex;
+        align-items: baseline;
       padding: 0;
+      padding-top: 72px;
     }
            .footer-input {
             width: 264px;
@@ -1234,7 +1243,8 @@ text-align: center;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 100px 0 0 0;
+                padding: 100px 0;
+                margin-top: 120px;
                         }
                         .footer-div {
                             display: flex;
