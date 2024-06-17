@@ -948,6 +948,7 @@ align-items: center;
      }   
      .team-list-m {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 24px;
@@ -1261,7 +1262,7 @@ text-align: center;
         display: flex;
         align-items: baseline;
       padding: 0;
-      padding-top: 72px;
+      
     }
            .footer-input {
             width: 264px;
@@ -1270,6 +1271,7 @@ text-align: center;
             align-items: baseline;
            }  
            .footer-form {
+            display: flex;
             flex-direction: row;
             gap:24px;
            }  
@@ -1281,6 +1283,7 @@ text-align: center;
                       }
                         .footer-div {
                             display: flex;
+                            flex-direction: row;
                             align-items: baseline;
                             margin-left: auto;
                             padding-left: 15px;
@@ -1298,7 +1301,7 @@ text-align: center;
 }               
 .footer-container-media {
     gap: 120px;
-    margin-right: 80px;
+    
 }
 .footer-next {
  padding-top: 0;
