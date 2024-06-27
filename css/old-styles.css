@@ -935,3 +935,29 @@ background-color:#404bbf;
        fill: #ffffff;
 }
   */
+  /*
+  <section class="catalog" id="catalog">
+  <div class="container container-catalog">
+      <h2 class="container-title">Catalog</h2>
+      <ul class="container-list list">
+          <li clas="catalog-item">
+            <div class="catalog-cover">
+              <picture>
+                  <source media="(min-width:1280px)" srcset=" /img/image-catalog/catalog-fenix-d1 1.png , /img/image-catalog/catalog-fenix-d1 @2x.png"/>
+                  <source media="(min-width:768px)" srcset="/img/image-catalog/catalog-fenix-tab1 1.png , /img/image-catalog/catalog-fenix-tab1 @2x.png"/>
+                  <source media="(min-width:320px)" src="/img/image-catalog/catalog-fenix-mob1 1.png , /img/image-catalog/catalog-fenix-mob1 @2x.png"/> 
+              </picture>
+            </div>  
+              
+              
+          </li>
+          <li clas="catalog-item"></li>
+          <li clas="catalog-item"></li>
+          <li clas="catalog-item"></li>
+          <li clas="catalog-item"></li>
+          <li clas="catalog-item"></li>
+      </ul>
+
+  </div>
+</section>
+*/
